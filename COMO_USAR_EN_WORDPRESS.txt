@@ -1,0 +1,58 @@
+═══════════════════════════════════════════════════════════════
+CÓMO USAR LA PÁGINA DE CATÁLOGO EN WORDPRESS
+═══════════════════════════════════════════════════════════════
+
+La página está en: catalogo_wordpress.html
+
+OPCIÓN A — Página nueva con bloque HTML personalizado
+-----------------------------------------------------
+1. En WordPress: Páginas → Añadir nueva.
+2. Título: Catálogo (o el que prefieras).
+3. Añade un bloque "HTML personalizado" (busca "HTML" en bloques).
+4. Abre catalogo_wordpress.html con un editor de texto (Bloc de notas, etc.).
+5. Copia TODO el contenido (desde <!DOCTYPE html> hasta </html>).
+6. Pégalo dentro del bloque HTML personalizado.
+7. Publicar.
+
+⚠️ Las imágenes usan rutas relativas (../FOTOS/..., ../banco.png).
+   Si tu sitio está en WordPress, sube las fotos a Medios y reemplaza
+   cada src="..." por la URL que te da WordPress para cada imagen.
+
+OPCIÓN B — Usar como plantilla de tema (avanzado)
+--------------------------------------------------
+1. Copia el contenido de catalogo_wordpress.html (solo el <body> y los <style>).
+2. Crea una plantilla de página en tu tema (por ejemplo page-catalogo.php).
+3. Pega el HTML/CSS y reemplaza las rutas de imágenes por:
+   <?php echo get_template_directory_uri(); ?>/imagenes/nombre.jpg
+   (o sube imágenes en Medios y usa las URLs completas).
+
+LOGO TRADICIONAL (diferente a Sofit Store)
+-------------------------------------------
+En esta página el "logo" es texto: "Bancos Deportivos" + "Luis Enrique · Medellín · Equipos Fitness".
+No se usa el logo de Sofit Store. Si quieres un logo gráfico:
+- Usa el archivo logo_bancos_deportivos.svg de esta carpeta.
+- En WordPress: Medios → Añadir nuevo → sube logo_bancos_deportivos.svg.
+- En el HTML, reemplaza el <a href="#" class="logo">... por:
+  <a href="/" class="logo"><img src="URL_DE_TU_LOGO_SUBIDO" alt="Bancos Deportivos" style="height:50px;"></a>
+
+CONTACTO (todo es tuyo)
+-----------------------
+- WhatsApp: 3113526127
+- Email: luisenriquemoralesmontoya@gmail.com
+- Celular: 3247060092
+- Dirección: Medellín, Calle 51 #35-80, barrio Caicedo
+- Catálogo WhatsApp: https://wa.me/c/263749864837193
+
+Todos los botones "COMPRAR" y "Consultar por WhatsApp" llevan a:
+https://wa.me/573113526127
+
+Requisitos cumplidos (como sofitstorecolombia.com/catalogo/):
+- Encabezado con logo/marca
+- Menú (Inicio, Catálogo, Contacto, COMPRAR AHORA)
+- Hero con título y CTA WhatsApp
+- Texto introductorio
+- Grid de productos con imagen, nombre, precio y botón WhatsApp
+- Sección de pesas/mancuernas
+- Pie de página con datos de contacto
+- Diseño responsive
+- Logo y contacto propios (no iguales a Sofit Store)
