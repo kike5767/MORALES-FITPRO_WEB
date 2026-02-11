@@ -1,43 +1,36 @@
-/* ======================================================
-   MORALES FITPRO - MAIN JS
-   Funciones generales del sitio
-   ====================================================== */
+/* ======================================
+   MORALES FITPRO - MAIN JS FINAL
+   ====================================== */
 
-(() => {
+document.addEventListener("DOMContentLoaded", () => {
 
-  // ==========================
-  // AÑO AUTOMÁTICO FOOTER
-  // ==========================
-  const yearEl = document.getElementById("year");
-  if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
-  }
+    const bajar = document.querySelector(".flecha-bajar");
+    const subir = document.querySelector(".flecha-subir");
 
-  // ==========================
-  // SCROLL SUAVE EN ANCLAS
-  // ==========================
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function (e) {
-      const target = document.querySelector(this.getAttribute("href"));
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({
-          behavior: "smooth"
+    /* =========================
+       SCROLL HACIA ABAJO
+    ========================= */
+    if (bajar) {
+        bajar.addEventListener("click", e => {
+            e.preventDefault();
+            window.scrollBy({
+                top: window.innerHeight,
+                behavior: "smooth"
+            });
         });
-      }
-    });
-  });
+    }
 
-  // ==========================
-  // BOTON WHATSAPP (SI EXISTE)
-  // ==========================
-  const whatsappBtn = document.getElementById("btn-whatsapp");
-  if (whatsappBtn) {
-    whatsappBtn.addEventListener("click", () => {
-      console.log("Contacto WhatsApp Morales FitPro");
-    });
-  }
+    /* =========================
+       SCROLL HACIA ARRIBA
+    ========================= */
+    if (subir) {
+        subir.addEventListener("click", e => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    }
 
-})();
-
-
+});

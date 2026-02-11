@@ -1,106 +1,380 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="description" content="Morales FitPro - Venta de bancos deportivos y equipos fitness en Colombia.">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MORALES FITPRO</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="description" content="Morales FitPro - Venta de bancos deportivos y equipos fitness en Colombia.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MORALES FITPRO</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<!-- ===== HEADER UNIFICADO ===== -->
+  <!-- ===== BOTONES FLOTANTES ===== -->
+  <a href="https://wa.me/573113526127?text=Hola%20Luis%20Enrique,%20quiero%20información%20sobre%20los%20equipos%20fitness"
+     class="whatsapp-float"
+     target="_blank">💬</a>
 
-<header class="header-principal">
+  <a href="carrito.html" class="cart-float">
+    🛒 <span id="cart-count">0</span>
+  </a>
 
-  <!-- LOGO TITULO -->
-  <img src="img/logo/logo_titulo.png" class="logo-titulo">
-
-  <IMAGEN PAREJA SOLO INICIO -->
-  <img src="img/portada/hero_fitness.png" class="hero-img">
-
-  <!-- LOGO VERDE -->
-  <img src="img/logo/logo_bancos_deportivos.svg" class="logo-verde">
-
-  <!-- MENU -->
-  <nav class="menu">
-    <a href="index.html">Inicio</a>
-    <a href="catalogo.html">Catálogo</a>
-    <a href="servicios.html">Servicios</a>
-    <a href="contacto.html">Contacto</a>
-  </nav>
-
-</header>
-
-<!-- ===== PRODUCTOS ===== -->
-
-<h2 class="titulo-seccion">Bancos deportivos</h2>
-
-<div class="productos">
-
-  <div class="producto">
-    <img src="img/bancos/banco-multifuncional-x7.png">
-    <div class="producto-nombre">Banco multifuncional x7</div>
-    <div class="producto-precio">$480.000</div>
+  <!-- ===== TOP BAR ===== -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span>📍 Medellín – Bello · 🚚 Envíos a toda Colombia</span>
+      <a href="https://wa.me/573113526127" target="_blank">📱 WhatsApp 3113526127</a>
+    </div>
   </div>
 
-  <div class="producto">
-    <img src="img/bancos/banco-multifuncional-x5.png">
-    <div class="producto-nombre">Banco multifuncional x5</div>
-    <div class="producto-precio">$390.000</div>
-  </div>
+  <!-- ===== HEADER ===== -->
+  <header class="header-principal">
+    <img src="img/logo/logo_titulo.png" class="logo-titulo" alt="Morales FitPro">
+    <img src="img/portada/hero_fitness.png" class="hero-img" alt="Entrenamiento fitness">
 
-  <div class="producto">
-    <img src="img/bancos/banco-multifuncional-x6-predicador.png">
-    <div class="producto-nombre">Banco x6 con predicador</div>
-    <div class="producto-precio">$390.000</div>
-  </div>
+    <!-- FLECHAS SCROLL -->
+    <div class="flecha-subir">↑</div>
+    <div class="flecha-bajar">↓</div>
 
-  <div class="producto">
-    <img src="img/bancos/banco-multifuncional-rack-x3.png">
-    <div class="producto-nombre">Banco multifuncional con rack</div>
-    <div class="producto-precio">$420.000</div>
-  </div>
+    <img src="img/logo/logo_bancos_deportivos.svg" class="logo-verde" alt="Bancos deportivos">
 
-</div>
+    <nav class="menu">
+      <a href="index.html" class="active">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
 
-<h2 class="titulo-seccion">Accesorios Fitness</h2>
+  <!-- ===== MAIN / PRODUCTOS ===== -->
+  <main class="container">
+    <h2 id="catalogo" class="titulo-seccion" style="text-align:center; margin:30px 0;">Bancos deportivos</h2>
+    <div class="productos">
 
-<div class="productos">
+      <!-- PRODUCTO 1 -->
+      <div class="producto">
+        <img src="img/bancos/banco-multifuncional-x7.png" alt="Banco multifuncional x7">
+        <div class="producto-nombre">Banco multifuncional x7</div>
+        <div class="producto-precio">$480.000</div>
+        <div class="botones-producto">
+          <button onclick="addToCart({id:'x7',name:'Banco multifuncional x7',price:480000})">Agregar al carrito</button>
+          <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola,%20quiero%20información%20del%20Banco%20multifuncional%20x7">Cotizar WhatsApp</a>
+        </div>
+      </div>
 
-  <div class="producto">
-    <img src="img/accesorios/discos-hierro-x4.png">
-    <div class="producto-nombre">Discos de hierro x4</div>
-  </div>
+      <!-- PRODUCTO 2 -->
+      <div class="producto">
+        <img src="img/bancos/banco-multifuncional-x5.png" alt="Banco multifuncional x5">
+        <div class="producto-nombre">Banco multifuncional x5</div>
+        <div class="producto-precio">$390.000</div>
+        <div class="botones-producto">
+          <button onclick="addToCart({id:'x5',name:'Banco multifuncional x5',price:390000})">Agregar al carrito</button>
+          <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola,%20quiero%20información%20del%20Banco%20multifuncional%20x5">Cotizar WhatsApp</a>
+        </div>
+      </div>
 
-  <div class="producto">
-    <img src="img/accesorios/kit-bandas-resistencia.png">
-    <div class="producto-nombre">Kit bandas resistencia</div>
-  </div>
+      <!-- PRODUCTO 3 -->
+      <div class="producto">
+        <img src="img/bancos/banco-multifuncional-x6-predicador.png" alt="Banco x6 posiciones">
+        <div class="producto-nombre">Banco x6 posiciones con predicador</div>
+        <div class="producto-precio">$390.000</div>
+        <div class="botones-producto">
+          <button onclick="addToCart({id:'x6',name:'Banco x6 posiciones con predicador',price:390000})">Agregar al carrito</button>
+          <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola,%20quiero%20información%20del%20Banco%20x6%20posiciones%20con%20predicador">Cotizar WhatsApp</a>
+        </div>
+      </div>
 
-  <div class="producto">
-    <img src="img/accesorios/kit-mancuernas-20kg.png">
-    <div class="producto-nombre">Kit mancuernas 20kg</div>
-  </div>
+      <!-- PRODUCTO 4 -->
+      <div class="producto">
+        <img src="img/bancos/banco-multifuncional-rack-x3.png" alt="Banco multifuncional con rack">
+        <div class="producto-nombre">Banco multifuncional con rack</div>
+        <div class="producto-precio">$420.000</div>
+        <div class="botones-producto">
+          <button onclick="addToCart({id:'rack',name:'Banco multifuncional con rack',price:420000})">Agregar al carrito</button>
+          <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola,%20quiero%20información%20del%20Banco%20multifuncional%20con%20rack">Cotizar WhatsApp</a>
+        </div>
+      </div>
 
-  <div class="producto">
-    <img src="img/accesorios/mancuernas-hexagonales-5kg.png">
-    <div class="producto-nombre">Mancuernas hexagonales 5kg</div>
-  </div>
+      <!-- PRODUCTO 5 -->
+      <div class="producto">
+        <img src="img/bancos/banco-abdominales-core.png" alt="Banco abdominales core">
+        <div class="producto-nombre">Banco abdominales y fortalecimiento core</div>
+        <div class="producto-precio">$230.000</div>
+        <div class="botones-producto">
+          <button onclick="addToCart({id:'abdominales',name:'Banco abdominales y fortalecimiento core',price:230000})">Agregar al carrito</button>
+          <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola,%20quiero%20información%20del%20Banco%20abdominales%20y%20fortalecimiento%20core">Cotizar WhatsApp</a>
+        </div>
+      </div>
 
-  <div class="producto">
-  <img src="img/bancos/Banco-plano-flexion-extension-piernas-gluteos-300x300.png" alt="Banco plano flexión extensión piernas y glúteos">
-  <div class="producto-nombre">Banco plano flexión extensión piernas y glúteos</div>
-  <div class="producto-precio">$359.000</div>
-</div>
+      <!-- PRODUCTO 6 -->
+      <div class="producto">
+        <img src="img/bancos/banco-sissy.png" alt="Banco Sissy">
+        <div class="producto-nombre">Banco Sissy glúteos e isquiotibiales</div>
+        <div class="producto-precio">$380.000</div>
+        <div class="botones-producto">
+          <button onclick="addToCart({id:'sissy',name:'Banco Sissy glúteos e isquiotibiales',price:380000})">Agregar al carrito</button>
+          <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola,%20quiero%20información%20del%20Banco%20Sissy%20glúteos%20e%20isquiotibiales">Cotizar WhatsApp</a>
+        </div>
+      </div>
 
+      <!-- PRODUCTO 7 -->
+      <div class="producto">
+        <img src="img/bancos/banco-plano-negro.png" alt="Banco press plano negro">
+        <div class="producto-nombre">Banco press plano negro</div>
+        <div class="producto-precio">$180.000</div>
+        <div class="botones-producto">
+          <button onclick="addToCart({id:'plano-negro',name:'Banco press plano negro',price:180000})">Agregar al carrito</button>
+          <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola,%20quiero%20información%20del%20Banco%20press%20plano%20negro">Cotizar WhatsApp</a>
+        </div>
+      </div>
 
-</div>
+      <!-- PRODUCTO 8 -->
+      <div class="producto">
+        <img src="img/bancos/banco-plano-azul.png" alt="Banco press plano azul">
+        <div class="producto-nombre">Banco press plano azul</div>
+        <div class="producto-precio">$180.000</div>
+        <div class="botones-producto">
+          <button onclick="addToCart({id:'plano-azul',name:'Banco press plano azul',price:180000})">Agregar al carrito</button>
+          <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola,%20quiero%20información%20del%20Banco%20press%20plano%20azul">Cotizar WhatsApp</a>
+        </div>
+      </div>
 
-<footer>
-<p>&copy; 2026 Morales FitPro</p>
-</footer>
+      <!-- PRODUCTO 9 -->
+      <div class="producto">
+        <img src="img/bancos/banco-plano-rojo.png" alt="Banco press plano rojo">
+        <div class="producto-nombre">Banco press plano rojo</div>
+        <div class="producto-precio">$180.000</div>
+        <div class="botones-producto">
+          <button onclick="addToCart({id:'plano-rojo',name:'Banco press plano rojo',price:180000})">Agregar al carrito</button>
+          <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola,%20quiero%20información%20del%20Banco%20press%20plano%20rojo">Cotizar WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ===== SECCIÓN ACCESORIOS ===== -->
+    <h2 id="accesorios" class="titulo-seccion" style="text-align:center; margin:50px 0 30px 0;">Accesorios</h2>
+    <div class="productos">
+
+      <div class="producto">
+        <img src="img/accesorios/discos-hierro-x4.png" alt="Discos de hierro x4 unidades">
+        <div class="producto-nombre">Discos de hierro x4 unidades</div>
+        <div class="producto-precio">$179.000</div>
+        <div class="botones-producto">
+          <button onclick="addToCart({id:'discos-x4',name:'Discos de hierro x4 unidades',price:179000})">Agregar al carrito</button>
+          <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola,%20quiero%20información%20de%20Discos%20de%20hierro%20x4%20unidades">Cotizar WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="img/accesorios/kit-bandas-resistencia.png" alt="Kit de bandas de resistencia">
+        <div class="producto-nombre">Kit de bandas de resistencia (3 unidades)</div>
+        <div class="producto-precio">$85.000</div>
+        <div class="botones-producto">
+          <button onclick="addToCart({id:'bandas',name:'Kit de bandas de resistencia (3 unidades)',price:85000})">Agregar al carrito</button>
+          <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola,%20quiero%20información%20del%20Kit%20de%20bandas%20de%20resistencia">Cotizar WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="img/accesorios/kit-mancuernas-20kg.png" alt="Kit de mancuernas 20kg">
+        <div class="producto-nombre">Kit de mancuernas 20kg</div>
+        <div class="producto-precio">$250.000</div>
+        <div class="botones-producto">
+          <button onclick="addToCart({id:'mancuernas-20',name:'Kit de mancuernas 20kg',price:250000})">Agregar al carrito</button>
+          <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola,%20quiero%20información%20del%20Kit%20de%20mancuernas%2020kg">Cotizar WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="img/accesorios/mancuernas-hexagonales-5kg.png" alt="Mancuernas hexagonales 5kg">
+        <div class="producto-nombre">Mancuernas hexagonales 5kg</div>
+        <div class="producto-precio">$120.000</div>
+        <div class="botones-producto">
+          <button onclick="addToCart({id:'mancuernas-5',name:'Mancuernas hexagonales 5kg',price:120000})">Agregar al carrito</button>
+          <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola,%20quiero%20información%20de%20Mancuernas%20hexagonales%205kg">Cotizar WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ===== SECCIÓN BICICLETAS SPINNING ===== -->
+    <h2 id="bicicletas" class="titulo-seccion" style="text-align:center; margin:50px 0 30px 0;">Bicicletas Spinning</h2>
+    <p style="text-align:center; margin-bottom:30px; color:#666; max-width:800px; margin-left:auto; margin-right:auto;">
+      Equipos profesionales para entrenamiento cardiovascular. Consulta disponibilidad y precios por WhatsApp. 
+      Trabajamos con proveedores aliados para conseguirte el mejor equipo según tu necesidad.
+    </p>
+    <div class="productos bicicletas-spinning">
+
+      <!-- BICICLETA 1 -->
+      <div class="producto producto-asesoria">
+        <img src="img/bicicletassp/sportfitness_genoa.jpg" alt="Sportfitness Genoa Spinning">
+        <div class="producto-nombre">Sportfitness Genoa Spinning</div>
+        <div class="producto-descripcion">
+          Bicicleta spinning profesional con volante de inercia pesado. Ideal para entrenamiento cardiovascular intenso. 
+          Sistema de resistencia ajustable y diseño ergonómico.
+        </div>
+        <div class="producto-precio" style="color:#666; font-style:italic;">Consulta precio y disponibilidad</div>
+        <div class="botones-producto">
+          <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola%20Luis%20Enrique,%20quiero%20información%20sobre%20la%20bicicleta%20Sportfitness%20Genoa%20Spinning">Consultar por WhatsApp</a>
+          <a class="btn-asesoria" href="contacto.html">Ver más opciones</a>
+        </div>
+      </div>
+
+      <!-- BICICLETA 2 -->
+      <div class="producto producto-asesoria">
+        <img src="img/bicicletassp/k6_fitness.jpg" alt="K6 Fitness Spinning">
+        <div class="producto-nombre">K6 Fitness Spinning</div>
+        <div class="producto-descripcion">
+          Bicicleta estática de alta resistencia. Perfecta para entrenamiento en casa o gimnasio. 
+          Volante de inercia para pedaleo suave y natural.
+        </div>
+        <div class="producto-precio" style="color:#666; font-style:italic;">Consulta precio y disponibilidad</div>
+        <div class="botones-producto">
+          <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola%20Luis%20Enrique,%20quiero%20información%20sobre%20la%20bicicleta%20K6%20Fitness%20Spinning">Consultar por WhatsApp</a>
+          <a class="btn-asesoria" href="contacto.html">Ver más opciones</a>
+        </div>
+      </div>
+
+      <!-- BICICLETA 3 -->
+      <div class="producto producto-asesoria">
+        <img src="img/bicicletassp/homesale_13kg .png" alt="Homesale Spinning 13kg">
+        <div class="producto-nombre">Homesale Spinning 13kg</div>
+        <div class="producto-descripcion">
+          Bicicleta spinning compacta para uso doméstico. Volante de 13kg para entrenamiento cardiovascular efectivo. 
+          Diseño compacto que se adapta a espacios reducidos.
+        </div>
+        <div class="producto-precio" style="color:#666; font-style:italic;">Consulta precio y disponibilidad</div>
+        <div class="botones-producto">
+          <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola%20Luis%20Enrique,%20quiero%20información%20sobre%20la%20bicicleta%20Homesale%20Spinning%2013kg">Consultar por WhatsApp</a>
+          <a class="btn-asesoria" href="contacto.html">Ver más opciones</a>
+        </div>
+      </div>
+
+      <!-- BICICLETA 4 -->
+      <div class="producto producto-asesoria">
+        <img src="img/bicicletassp/vertical_spinning.png" alt="Vertical Spinning">
+        <div class="producto-nombre">Vertical Spinning</div>
+        <div class="producto-descripcion">
+          Bicicleta spinning vertical profesional. Ideal para entrenamiento cardiovascular de alta intensidad. 
+          Sistema de resistencia magnética ajustable.
+        </div>
+        <div class="producto-precio" style="color:#666; font-style:italic;">Consulta precio y disponibilidad</div>
+        <div class="botones-producto">
+          <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola%20Luis%20Enrique,%20quiero%20información%20sobre%20la%20bicicleta%20Vertical%20Spinning">Consultar por WhatsApp</a>
+          <a class="btn-asesoria" href="contacto.html">Ver más opciones</a>
+        </div>
+      </div>
+
+      <!-- BICICLETA 5 -->
+      <div class="producto producto-asesoria">
+        <img src="img/bicicletassp/Copilot_20260210_001326.png" alt="Spinning Pro Fitness">
+        <div class="producto-nombre">Spinning Pro Fitness</div>
+        <div class="producto-descripcion">
+          Bicicleta spinning profesional con sistema de resistencia avanzado. Perfecta para entrenamiento cardiovascular 
+          y mejora de resistencia. Diseño robusto y duradero.
+        </div>
+        <div class="producto-precio" style="color:#666; font-style:italic;">Consulta precio y disponibilidad</div>
+        <div class="botones-producto">
+          <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola%20Luis%20Enrique,%20quiero%20información%20sobre%20bicicletas%20spinning%20profesionales">Consultar por WhatsApp</a>
+          <a class="btn-asesoria" href="contacto.html">Ver más opciones</a>
+        </div>
+      </div>
+
+      <!-- BICICLETA 6 -->
+      <div class="producto producto-asesoria">
+        <img src="img/bicicletassp/Copilot_20260210_001458.png" alt="Spinning Home Edition">
+        <div class="producto-nombre">Spinning Home Edition</div>
+        <div class="producto-descripcion">
+          Bicicleta spinning diseñada para uso doméstico. Compacta y funcional, ideal para complementar tu entrenamiento 
+          en casa. Sistema de resistencia ajustable.
+        </div>
+        <div class="producto-precio" style="color:#666; font-style:italic;">Consulta precio y disponibilidad</div>
+        <div class="botones-producto">
+          <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola%20Luis%20Enrique,%20quiero%20información%20sobre%20bicicletas%20spinning%20para%20casa">Consultar por WhatsApp</a>
+          <a class="btn-asesoria" href="contacto.html">Ver más opciones</a>
+        </div>
+      </div>
+
+      <!-- BICICLETA 7 -->
+      <div class="producto producto-asesoria">
+        <img src="img/bicicletassp/AZxGagMfT9JaCmaJAZQOgA-AZxGagMf8C5Bho34rGFBcw.jpg" alt="Spinning Elite">
+        <div class="producto-nombre">Spinning Elite</div>
+        <div class="producto-descripcion">
+          Bicicleta spinning de gama alta. Volante de inercia pesado para entrenamiento profesional. 
+          Sistema de resistencia magnética y diseño ergonómico avanzado.
+        </div>
+        <div class="producto-precio" style="color:#666; font-style:italic;">Consulta precio y disponibilidad</div>
+        <div class="botones-producto">
+          <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola%20Luis%20Enrique,%20quiero%20información%20sobre%20bicicletas%20spinning%20elite">Consultar por WhatsApp</a>
+          <a class="btn-asesoria" href="contacto.html">Ver más opciones</a>
+        </div>
+      </div>
+
+      <!-- BICICLETA 8 -->
+      <div class="producto producto-asesoria">
+        <img src="img/bicicletassp/AZxGVzW2Xmlm9MJghUQSQQ-AZxGVzW2fblLWksE-6Kd4g.jpg" alt="Spinning Compact">
+        <div class="producto-nombre">Spinning Compact</div>
+        <div class="producto-descripcion">
+          Bicicleta spinning compacta para espacios reducidos. Ideal para apartamentos o habitaciones pequeñas. 
+          Mantiene todas las funcionalidades de una bicicleta profesional.
+        </div>
+        <div class="producto-precio" style="color:#666; font-style:italic;">Consulta precio y disponibilidad</div>
+        <div class="botones-producto">
+          <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola%20Luis%20Enrique,%20quiero%20información%20sobre%20bicicletas%20spinning%20compactas">Consultar por WhatsApp</a>
+          <a class="btn-asesoria" href="contacto.html">Ver más opciones</a>
+        </div>
+      </div>
+
+      <!-- BICICLETA 9 -->
+      <div class="producto producto-asesoria">
+        <img src="img/bicicletassp/AZxGWfn775i7MICA3FPZig-AZxGWfn7S4WMlWyMgSqjdw.jpg" alt="Spinning Pro Series">
+        <div class="producto-nombre">Spinning Pro Series</div>
+        <div class="producto-descripcion">
+          Bicicleta spinning profesional para gimnasios y uso intensivo. Volante de inercia pesado, 
+          sistema de resistencia ajustable y construcción robusta para entrenamiento diario.
+        </div>
+        <div class="producto-precio" style="color:#666; font-style:italic;">Consulta precio y disponibilidad</div>
+        <div class="botones-producto">
+          <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola%20Luis%20Enrique,%20quiero%20información%20sobre%20bicicletas%20spinning%20pro%20series">Consultar por WhatsApp</a>
+          <a class="btn-asesoria" href="contacto.html">Ver más opciones</a>
+        </div>
+      </div>
+
+      <!-- BICICLETA 10 -->
+      <div class="producto producto-asesoria">
+        <img src="img/bicicletassp/sportfitness_genoa (2).jpg" alt="Sportfitness Genoa Pro">
+        <div class="producto-nombre">Sportfitness Genoa Pro</div>
+        <div class="producto-descripcion">
+          Versión profesional de la Sportfitness Genoa. Bicicleta spinning de alta gama con sistema de resistencia 
+          magnética avanzado. Ideal para entrenamiento cardiovascular intenso y profesional.
+        </div>
+        <div class="producto-precio" style="color:#666; font-style:italic;">Consulta precio y disponibilidad</div>
+        <div class="botones-producto">
+          <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola%20Luis%20Enrique,%20quiero%20información%20sobre%20la%20bicicleta%20Sportfitness%20Genoa%20Pro">Consultar por WhatsApp</a>
+          <a class="btn-asesoria" href="contacto.html">Ver más opciones</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div>© <span id="year"></span> MORALES FITPRO · Bancos deportivos</div>
+    <div class="footer-links">
+      <a href="https://web.facebook.com/luis.enrique.morales.858544" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/luisenriquemoralesmontoya/" target="_blank">Instagram</a>
+      <a href="https://wa.me/573113526127" target="_blank">WhatsApp</a>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="js/main.js"></script>
+  <script src="js/carrito.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>

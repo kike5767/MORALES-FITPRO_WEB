@@ -1,0 +1,82 @@
+
+
+bicicletas
+
+
+Carpeta de imágenes
+
+Sí, coloca todas las fotos de bicicletas en img/bicicletassp.
+
+Cada archivo de imagen puede llamarse de forma corta y descriptiva, basada en el nombre comercial. Ejemplo:
+
+sportfitness_genoa.png
+
+k6_fitness.png
+
+homesale_13kg.png
+
+slim_cycle_2en1.png
+
+magnux_gimnasio.png
+
+ultimate_fitness_pro.png
+
+reebok_zjet_430.png
+
+gw_indoor.png
+
+profit_spinning_pro.png
+
+vertical_spinning.png
+
+
+
+¡Perfecto, Luis! 🙌 Vamos a dejarlo **listo para reemplazar** en tu proyecto. Te voy a generar un archivo HTML completo actualizado, que incluye:
+
+* **Bancos deportivos** como estaban funcionando
+* **Nueva sección “Bicicletas Spinning”** solo por WhatsApp, sin precio, con descripción y botón para consultar
+* Separación visual clara para que se vea distinto de los bancos
+* Uso de imágenes desde `img/bicicletassp` con nombres limpios
+
+También te daré **la lista de nombres de archivos sugeridos** para que guardes las fotos en la carpeta correcta.
+
+---
+
+### **Nombres de archivos para `img/bicicletassp`**
+
+| Nombre comercial         | Nombre de archivo sugerido |
+| ------------------------ | -------------------------- |
+| Sportfitness Genoa       | sportfitness_genoa.png     |
+| K6 Fitness Spinning      | k6_fitness.png             |
+| Homesale Spinning 13 kg  | homesale_13kg.png          |
+| Slim Cycle 2 en 1        | slim_cycle_2en1.png        |
+| Magnux Spinning Gimnasio | magnux_gimnasio.png        |
+| Ultimate Fitness Pro     | ultimate_fitness_pro.png   |
+| Reebok Z-Jet 430         | reebok_zjet_430.png        |
+| GW Indoor Bike           | gw_indoor.png              |
+| Profit Spinning          |                            |
+
+
+
+
+Cómo avanzamos
+
+Para no romper nada:
+
+Me das cada archivo HTML y CSS principal uno por uno, empezando por:
+
+index.html (home)
+
+catalogo.html
+
+style.css
+
+carrito.html
+
+carrito.js (solo si lo quieres revisar)
+
+Otros HTML secundarios (bicicletas.html si existe)
+
+Yo los reviso línea por línea, corrijo rutas de imágenes, etiquetas flotantes, grid de productos y botones, y te devuelvo archivos listos para reemplazar sin perder lo que funcionaba antes.
+
+

@@ -10,7 +10,17 @@
 
 <body>
 
-<!-- ================= TOP BAR ================= -->
+<!-- ===== BOTONES FLOTANTES ===== -->
+
+<a href="https://wa.me/573113526127?text=Hola%20Luis%20Enrique,%20quiero%20información%20sobre%20los%20equipos%20fitness"
+   class="whatsapp-float"
+   target="_blank">💬</a>
+
+<a href="carrito.html" class="cart-float">
+    🛒 <span id="cart-count">0</span>
+</a>
+
+<!-- ===== TOP BAR ===== -->
 
 <div class="topbar">
   <div class="topbar-inner">
@@ -18,26 +28,28 @@
   </div>
 </div>
 
-<!-- ================= HEADER ================= -->
+<!-- ===== HEADER ===== -->
 
 <header class="header-home">
 
-  <img src="img/logo/logo_bancos_deportivos.svg" class="brand-logo">
-  <img src="img/logo/logo_titulo.png" class="brand-logo-small">
+  <div style="text-align:center;">
+    <img src="img/logo/logo_bancos_deportivos.svg" class="brand-logo" alt="Logo Bancos Deportivos">
+    <img src="img/logo/logo_titulo.png" class="brand-logo-small" alt="Morales FitPro">
+  </div>
 
-  <nav class="menu-home">
+  <nav class="menu-home" style="text-align:center;">
     <a href="index.html">Inicio</a>
     <a href="nosotros.html">Nosotros</a>
     <a href="catalogo.html">Catálogo</a>
-    <a href="servicios.html">Servicios</a>
+    <a href="servicios.html" class="active">Servicios</a>
     <a href="contacto.html">Contacto</a>
   </nav>
 
 </header>
 
-<!-- ================= CONTENIDO ================= -->
+<!-- ===== CONTENIDO ===== -->
 
-<div class="container" style="max-width:900px; margin:auto; padding:20px; text-align:center;">
+<main class="container" style="max-width:900px; margin:auto; padding:20px; text-align:center;">
 
   <h2>Servicios Morales FitPro</h2>
 
@@ -83,13 +95,18 @@
     <p>Confirmamos pedido y coordinamos entrega segura.</p>
   </div>
 
-</div>
+</main>
 
-<!-- ================= FOOTER ================= -->
+<!-- ===== FOOTER ===== -->
 
-<footer>
+<footer style="text-align:center;">
   <p>&copy; 2026 Morales FitPro. Todos los derechos reservados.</p>
 </footer>
+
+<!-- ===== SCRIPTS ===== -->
+
+<script src="js/main.js"></script>
+<script src="js/carrito.js"></script>
 
 </body>
 </html>

@@ -8,9 +8,18 @@
   <title>MORALES FITPRO - Catálogo 2026 Bancos Deportivos</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
+<!-- ===== BOTONES FLOTANTES ===== -->
+<a href="https://wa.me/573113526127?text=Hola%20Luis%20Enrique,%20quiero%20información%20sobre%20los%20equipos%20fitness"
+   class="whatsapp-float"
+   target="_blank">💬</a>
+
+<a href="carrito.html" class="cart-float">
+    🛒 <span id="cart-count">0</span>
+</a>
+
+<!-- ===== HEADER ===== -->
 <header class="site-header">
   <nav class="nav">
     <a class="brand-wrap" href="index.html">
@@ -32,6 +41,7 @@
   </nav>
 </header>
 
+<!-- ===== SECCIÓN PRODUCTOS ===== -->
 <section class="section">
   <div class="container">
 
@@ -45,6 +55,10 @@
         <div class="producto-info">
           <div class="producto-nombre">Banco multifuncional x7 con flexión y extensión</div>
           <div class="producto-precio">$480.000</div>
+          <div class="botones-producto">
+            <button onclick="addToCart({id:'x7',name:'Banco multifuncional x7',price:480000})">Agregar al carrito</button>
+            <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola,%20quiero%20información%20del%20Banco%20multifuncional%20x7">Cotizar WhatsApp</a>
+          </div>
         </div>
       </div>
 
@@ -53,6 +67,10 @@
         <div class="producto-info">
           <div class="producto-nombre">Banco multifuncional x5 posiciones</div>
           <div class="producto-precio">$390.000</div>
+          <div class="botones-producto">
+            <button onclick="addToCart({id:'x5',name:'Banco multifuncional x5',price:390000})">Agregar al carrito</button>
+            <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola,%20quiero%20información%20del%20Banco%20multifuncional%20x5">Cotizar WhatsApp</a>
+          </div>
         </div>
       </div>
 
@@ -61,14 +79,22 @@
         <div class="producto-info">
           <div class="producto-nombre">Banco x6 posiciones con predicador</div>
           <div class="producto-precio">$390.000</div>
+          <div class="botones-producto">
+            <button onclick="addToCart({id:'x6',name:'Banco x6 posiciones con predicador',price:390000})">Agregar al carrito</button>
+            <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola,%20quiero%20información%20del%20Banco%20x6%20posiciones%20con%20predicador">Cotizar WhatsApp</a>
+          </div>
         </div>
       </div>
 
       <div class="producto">
-        <img src="img/bancos/banco-rack-x3.png" alt="Banco multifuncional con rack">
+        <img src="img/bancos/banco-multifuncional-rack-x3.png" alt="Banco multifuncional con rack">
         <div class="producto-info">
           <div class="producto-nombre">Banco multifuncional con rack</div>
           <div class="producto-precio">$420.000</div>
+          <div class="botones-producto">
+            <button onclick="addToCart({id:'rack',name:'Banco multifuncional con rack',price:420000})">Agregar al carrito</button>
+            <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola,%20quiero%20información%20del%20Banco%20multifuncional%20con%20rack">Cotizar WhatsApp</a>
+          </div>
         </div>
       </div>
 
@@ -77,6 +103,10 @@
         <div class="producto-info">
           <div class="producto-nombre">Banco abdominales y fortalecimiento core</div>
           <div class="producto-precio">$230.000</div>
+          <div class="botones-producto">
+            <button onclick="addToCart({id:'abdominales',name:'Banco abdominales y fortalecimiento core',price:230000})">Agregar al carrito</button>
+            <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola,%20quiero%20información%20del%20Banco%20abdominales%20y%20fortalecimiento%20core">Cotizar WhatsApp</a>
+          </div>
         </div>
       </div>
 
@@ -85,6 +115,10 @@
         <div class="producto-info">
           <div class="producto-nombre">Banco Sissy glúteos e isquiotibiales</div>
           <div class="producto-precio">$380.000</div>
+          <div class="botones-producto">
+            <button onclick="addToCart({id:'sissy',name:'Banco Sissy glúteos e isquiotibiales',price:380000})">Agregar al carrito</button>
+            <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola,%20quiero%20información%20del%20Banco%20Sissy%20glúteos%20e%20isquiotibiales">Cotizar WhatsApp</a>
+          </div>
         </div>
       </div>
 
@@ -93,6 +127,10 @@
         <div class="producto-info">
           <div class="producto-nombre">Banco press plano negro</div>
           <div class="producto-precio">$180.000</div>
+          <div class="botones-producto">
+            <button onclick="addToCart({id:'plano-negro',name:'Banco press plano negro',price:180000})">Agregar al carrito</button>
+            <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola,%20quiero%20información%20del%20Banco%20press%20plano%20negro">Cotizar WhatsApp</a>
+          </div>
         </div>
       </div>
 
@@ -101,6 +139,10 @@
         <div class="producto-info">
           <div class="producto-nombre">Banco press plano azul</div>
           <div class="producto-precio">$180.000</div>
+          <div class="botones-producto">
+            <button onclick="addToCart({id:'plano-azul',name:'Banco press plano azul',price:180000})">Agregar al carrito</button>
+            <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola,%20quiero%20información%20del%20Banco%20press%20plano%20azul">Cotizar WhatsApp</a>
+          </div>
         </div>
       </div>
 
@@ -109,79 +151,86 @@
         <div class="producto-info">
           <div class="producto-nombre">Banco press plano rojo</div>
           <div class="producto-precio">$180.000</div>
+          <div class="botones-producto">
+            <button onclick="addToCart({id:'plano-rojo',name:'Banco press plano rojo',price:180000})">Agregar al carrito</button>
+            <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola,%20quiero%20información%20del%20Banco%20press%20plano%20rojo">Cotizar WhatsApp</a>
+          </div>
         </div>
       </div>
 
     </div> <!-- cierre productos -->
 
-    <!-- Sección Accesorios -->
+    <!-- ===== SECCIÓN ACCESORIOS ===== -->
     <section id="accesorios">
       <h2>Accesorios</h2>
 
-      <div class="producto">
-        <img src="img/accesorios/Discos de hierro x4 unidades.png" alt="Discos de hierro x4 unidades">
-        <p>Discos de hierro x4 unidades</p>
-      </div>
-      <div class="producto">
-        <img src="img/accesorios/Discos de hierro x4 unidades – (2).png" alt="Discos de hierro x4 unidades – (2)">
-        <p>Discos de hierro x4 unidades – (2)</p>
-      </div>
-      <div class="producto">
-        <img src="img/accesorios/Discos de hierro x4 unidades –.png" alt="Discos de hierro x4 unidades –">
-        <p>Discos de hierro x4 unidades –</p>
-      </div>
-      <div class="producto">
-        <img src="img/accesorios/discos-hierro-x4.png" alt="Discos de hierro x4">
-        <p>Discos de hierro x4</p>
-      </div>
-      <div class="producto">
-        <img src="img/accesorios/Kit de bandas de resistencia (3 unidades) .png" alt="Kit de bandas de resistencia (3 unidades)">
-        <p>Kit de bandas de resistencia (3 unidades)</p>
-      </div>
-      <div class="producto">
-        <img src="img/accesorios/kit-bandas-resistencia.png" alt="Kit de bandas de resistencia">
-        <p>Kit de bandas de resistencia</p>
-      </div>
-      <div class="producto">
-        <img src="img/accesorios/kit-mancuernas-20kg.png" alt="Kit de mancuernas 20kg">
-        <p>Kit de mancuernas 20kg</p>
-      </div>
-      <div class="producto">
-        <img src="img/accesorios/mancuernas-hexagonales-5kg.png" alt="Mancuernas hexagonales 5kg">
-        <p>Mancuernas hexagonales 5kg</p>
-      </div>
-      <div class="producto">
-        <img src="img/accesorios/Kit de mancuernas 20kg.png" alt="Kit de mancuernas 20kg">
-        <p>Kit de mancuernas 20kg</p>
-      </div>
-      <div class="producto">
-        <img src="img/accesorios/Kit de mancuernas 20kg).png" alt="Kit de mancuernas 20kg)">
-        <p>Kit de mancuernas 20kg)</p>
-      </div>
-      <div class="producto">
-        <img src="img/accesorios/Kit de mancuernas 20kg .png" alt="Kit de mancuernas 20kg">
-        <p>Kit de mancuernas 20kg</p>
-      </div>
-      <div class="producto">
-        <img src="img/accesorios/Kit de mancuernas 20kg (3).png" alt="Kit de mancuernas 20kg (3)">
-        <p>Kit de mancuernas 20kg (3)</p>
-      </div>
-      <div class="producto">
-        <img src="img/accesorios/Kit de mancuernas 20kg (2).png" alt="Kit de mancuernas 20kg (2)">
-        <p>Kit de mancuernas 20kg (2)</p>
-      </div>
+      <div class="productos">
+
+        <div class="producto">
+          <img src="img/accesorios/discos-hierro-x4.png" alt="Discos de hierro x4 unidades">
+          <div class="producto-nombre">Discos de hierro x4 unidades</div>
+          <div class="producto-precio">$179.000</div>
+          <div class="botones-producto">
+            <button onclick="addToCart({id:'discos-x4',name:'Discos de hierro x4 unidades',price:179000})">Agregar al carrito</button>
+            <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola,%20quiero%20información%20de%20Discos%20de%20hierro%20x4%20unidades">Cotizar WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="producto">
+          <img src="img/accesorios/kit-bandas-resistencia.png" alt="Kit de bandas de resistencia">
+          <div class="producto-nombre">Kit de bandas de resistencia (3 unidades)</div>
+          <div class="producto-precio">$85.000</div>
+          <div class="botones-producto">
+            <button onclick="addToCart({id:'bandas',name:'Kit de bandas de resistencia (3 unidades)',price:85000})">Agregar al carrito</button>
+            <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola,%20quiero%20información%20del%20Kit%20de%20bandas%20de%20resistencia">Cotizar WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="producto">
+          <img src="img/accesorios/kit-mancuernas-20kg.png" alt="Kit de mancuernas 20kg">
+          <div class="producto-nombre">Kit de mancuernas 20kg</div>
+          <div class="producto-precio">$250.000</div>
+          <div class="botones-producto">
+            <button onclick="addToCart({id:'mancuernas-20',name:'Kit de mancuernas 20kg',price:250000})">Agregar al carrito</button>
+            <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola,%20quiero%20información%20del%20Kit%20de%20mancuernas%2020kg">Cotizar WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="producto">
+          <img src="img/accesorios/mancuernas-hexagonales-5kg.png" alt="Mancuernas hexagonales 5kg">
+          <div class="producto-nombre">Mancuernas hexagonales 5kg</div>
+          <div class="producto-precio">$120.000</div>
+          <div class="botones-producto">
+            <button onclick="addToCart({id:'mancuernas-5',name:'Mancuernas hexagonales 5kg',price:120000})">Agregar al carrito</button>
+            <a class="btn-whatsapp" target="_blank" href="https://wa.me/573113526127?text=Hola,%20quiero%20información%20de%20Mancuernas%20hexagonales%205kg">Cotizar WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- Puedes agregar más accesorios siguiendo el mismo patrón -->
+
+      </div> <!-- cierre productos accesorios -->
 
     </section>
 
   </div> <!-- cierre container -->
 </section>
 
-<footer>
-    <p>&copy; 2026 FitPro. Todos los derechos reservados.</p>
-</footer>
+<!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div>© <span id="year"></span> MORALES FITPRO · Bancos deportivos</div>
+    <div class="footer-links">
+      <a href="https://web.facebook.com/luis.enrique.morales.858544" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/luisenriquemoralesmontoya/" target="_blank">Instagram</a>
+      <a href="https://wa.me/573113526127" target="_blank">WhatsApp</a>
+    </div>
+  </footer>
 
+<!-- ===== SCRIPTS ===== -->
 <script src="js/main.js"></script>
 <script src="js/carrito.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>

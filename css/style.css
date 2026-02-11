@@ -1,300 +1,834 @@
-/* =====================================
-   MORALES FITPRO - ESTILO GENERAL
-===================================== */
-
-:root{
-  --bg:#eef6ff;
-  --panel:#ffffff;
-  --border:#dbe6f5;
-  --brand:#1e88e5;
-  --text:#1f2937;
-  --muted:#6b7280;
+/* =========================
+   BOTON FLOTANTE CARRITO
+========================= */
+.cart-float {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 20px;
+    padding: 14px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,.2);
+    z-index: 999;
 }
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+.cart-float span {
+    background: red;
+    color: white;
+    font-size: 12px;
+    padding: 3px 7px;
+    border-radius: 50%;
+    margin-left: 6px;
 }
 
-body{
-  font-family:Arial, Helvetica, sans-serif;
-  background:var(--bg);
-  color:var(--text);
-  overflow-x:hidden;
+/* =========================
+   MENSAJE FLOTANTE
+========================= */
+.cart-toast {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    background: #333;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: 0.3s;
+    z-index: 1000;
 }
 
-/* =====================================
-   HEADER
-===================================== */
-
-.header-home{
-  text-align:center;
-  padding:15px 0;
-  background:#fff;
-  border-bottom:1px solid var(--border);
+.cart-toast.show {
+    opacity: 1;
 }
 
-.brand-logo{
-  height:60px;
-  display:block;
-  margin:0 auto;
+/* =========================
+   BOTON FLOTANTE WHATSAPP
+========================= */
+.whatsapp-float {
+    position: fixed;
+    right: 20px;
+    bottom: 90px;
+    background: #25D366;
+    color: white;
+    font-size: 22px;
+    padding: 14px 16px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,.2);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
 }
 
-/* LOGO TITULO */
-.brand-logo-small{
-  width:320px;
-  max-width:90%;
-  display:block;
-  margin:10px auto 15px auto;
-}
-
-/* MENU */
-
-.menu-home{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:30px;
-  flex-wrap:wrap;
-}
-
-.menu-home a{
-  text-decoration:none;
-  font-weight:600;
-  font-size:15px;
-  color:var(--text);
-  padding:8px 12px;
-}
-
-.menu-home a:hover{
-  color:var(--brand);
-}
-
-/* =====================================
-   HERO (PAREJA + LOGO)
-===================================== */
-
-.hero{
-  width:100%;
-  height:50vh;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  overflow:hidden;
-  background:#e6f0ff;
-}
-
-/* LOGO ENCIMA DE PAREJA */
-.hero-logo-top{
-  width:320px;
-  max-width:80%;
-  margin:15px auto;
-  display:block;
-}
-
-/* IMAGEN PAREJA */
-.hero img{
-  width:100%;
-  height:100%;
-  object-fit:contain;
+.whatsapp-float:hover {
+    transform: scale(1.05);
 }
 
 /* =====================================
-   TEXTO HERO
+   ESTILOS GENERALES
 ===================================== */
-
-.hero-texto{
-  text-align:center;
-  padding:30px 15px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.hero-texto h2{
-  font-size:28px;
-}
-
-.hero-texto p{
-  color:var(--muted);
-  margin-top:8px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f5f5f5;
 }
 
 /* =====================================
-   TITULOS
+   TOP BAR
 ===================================== */
-
-h1,h2,h3,p{
-  text-align:center;
+.topbar {
+    background: #007ACC;
+    color: white;
+    padding: 8px 0;
+    font-size: 14px;
 }
 
-h2{
-  margin:30px 0 15px;
+.topbar-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.topbar-inner a {
+    color: white;
+    text-decoration: none;
+}
+
+.topbar-inner a:hover {
+    text-decoration: underline;
 }
 
 /* =====================================
-   GRID PRODUCTOS
+   HEADER PRINCIPAL
 ===================================== */
-
-.productos{
-  max-width:1100px;
-  margin:0 auto 40px auto;
-  padding:0 15px;
-
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:30px;
+.header-principal {
+    background: white;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
 }
 
-.producto{
-  background:#fff;
-  border:1px solid var(--border);
-  border-radius:12px;
-  padding:15px;
-  text-align:center;
+/* Logos en index.html - llenan ancho completo, altura reducida */
+.logo-titulo,
+.hero-img,
+.logo-verde {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
 
-.producto img{
-  width:100%;
-  height:260px;
-  object-fit:contain;
-  margin-bottom:10px;
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 15px 0 20px 0;
 }
 
-.producto-nombre{
-  font-weight:600;
-  margin-bottom:6px;
+.menu a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #333;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
-.producto-precio{
-  color:var(--brand);
-  font-weight:700;
-  font-size:18px;
+.menu a:hover,
+.menu a.active {
+    color: white;
+    background: #007ACC;
 }
 
 /* =====================================
-   REDES SOCIALES
+   SITE HEADER (Alternativo)
 ===================================== */
-
-.redes{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:12px;
-  margin-bottom:30px;
+.site-header {
+    background: white;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
 }
 
-.redes-linea{
-  display:flex;
-  justify-content:center;
-  gap:25px;
-  flex-wrap:wrap;
+.nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.redes a{
-  text-decoration:none;
-  color:var(--text);
-  font-weight:600;
+.brand-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #333;
 }
 
-.redes a:hover{
-  color:var(--brand);
+/* Logo en otras páginas - centrado y ancho completo */
+.brand-logo {
+    height: 50px;
+    width: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Logo en header-home - centrado y ancho completo */
+.header-home .brand-logo {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 60px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.brand small {
+    font-size: 12px;
+    font-weight: normal;
+    color: #666;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
+    background: #007ACC;
+    color: white;
+}
+
+/* =====================================
+   HEADER HOME (Alternativo)
+===================================== */
+.header-home {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-logos {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Logo pequeño en otras páginas - centrado y ancho completo */
+.brand-logo-small {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    max-height: 80px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.menu-home {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.menu-home a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.menu-home a:hover,
+.menu-home a.active {
+    background: #007ACC;
+    color: white;
+}
+
+/* =====================================
+   HERO SECTION
+===================================== */
+.hero {
+    background: linear-gradient(135deg, #007ACC 0%, #005a9e 100%);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero-panel {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-lead {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.hero-eyebrow {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    opacity: 0.8;
+}
+
+/* =====================================
+   CONTAINER
+===================================== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.section {
+    margin: 40px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* =====================================
+   PRODUCTOS
+===================================== */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.producto {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.producto img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.producto-nombre {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.producto-precio {
+    color: #007ACC;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.producto-descripcion {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 10px 0 15px 0;
+    min-height: 60px;
+}
+
+/* =====================================
+   BICICLETAS SPINNING (Solo asesoría)
+===================================== */
+.bicicletas-spinning .producto {
+    border: 2px solid #e3f2fd;
+    background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+}
+
+.bicicletas-spinning .producto:hover {
+    border-color: #007ACC;
+    box-shadow: 0 5px 20px rgba(0, 122, 204, 0.15);
+}
+
+.producto-asesoria .botones-producto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-asesoria {
+    background: #6c757d;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    transition: background 0.3s;
+    font-size: 14px;
+}
+
+.btn-asesoria:hover {
+    background: #5a6268;
+}
+
+/* Ajuste responsive para bicicletas */
+@media (max-width: 768px) {
+    .bicicletas-spinning .producto {
+        margin-bottom: 20px;
+    }
+    
+    .producto-descripcion {
+        min-height: auto;
+    }
+}
+
+.producto-info {
+    padding: 10px 0;
+}
+
+.botones-producto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.botones-producto button {
+    background: #007ACC;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.botones-producto button:hover {
+    background: #005a9e;
+}
+
+.btn-whatsapp {
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    transition: background 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background: #20ba5a;
 }
 
 /* =====================================
    BOTONES CTA
 ===================================== */
+.cta {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
 
-.cta{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:15px;
-  margin:20px 0;
+.btn {
+    background: #007ACC;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #005a9e;
+}
+
+.btn-secondary {
+    background: #25D366;
+}
+
+.btn-secondary:hover {
+    background: #20ba5a;
+}
+
+.btn-ghost {
+    background: transparent;
+    border: 2px solid #007ACC;
+    color: #007ACC;
+}
+
+.btn-ghost:hover {
+    background: #007ACC;
+    color: white;
+}
+
+/* =====================================
+   CARDS
+===================================== */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin: 20px 0;
+}
+
+.pill {
+    background: #e3f2fd;
+    color: #007ACC;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 15px 0;
+}
+
+/* =====================================
+   ICON GRID (Contacto)
+===================================== */
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.icon-tile {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.icon-tile:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.icon-tile .ico {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.icon-tile .name {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Colores de icon-tile con texto visible */
+.icon-tile.wa { 
+    background: #25D366; 
+    color: white; 
+}
+.icon-tile.wa .name { color: white; }
+
+.icon-tile.yt { 
+    background: #FF0000; 
+    color: white; 
+}
+.icon-tile.yt .name { color: white; }
+
+.icon-tile.fb { 
+    background: #1877f2; 
+    color: white; 
+}
+.icon-tile.fb .name { color: white; }
+
+.icon-tile.ig { 
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); 
+    color: white; 
+}
+.icon-tile.ig .name { color: white; }
+
+.icon-tile.tk { 
+    background: #000; 
+    color: white; 
+}
+.icon-tile.tk .name { color: white; }
+
+.icon-tile.in { 
+    background: #0a66c2; 
+    color: white; 
+}
+.icon-tile.in .name { color: white; }
+
+.icon-tile.x { 
+    background: #000; 
+    color: white; 
+}
+.icon-tile.x .name { color: white; }
+
+.icon-tile.pin { 
+    background: #bd081c; 
+    color: white; 
+}
+.icon-tile.pin .name { color: white; }
+
+.icon-tile.web { 
+    background: #007ACC; 
+    color: white; 
+}
+.icon-tile.web .name { color: white; }
+
+.icon-tile.gbiz { 
+    background: #4285f4; 
+    color: white; 
+}
+.icon-tile.gbiz .name { color: white; }
+
+.icon-tile.misc { 
+    background: #666; 
+    color: white; 
+}
+.icon-tile.misc .name { color: white; }
+
+/* =====================================
+   REDES SOCIALES
+===================================== */
+.redes {
+    margin: 30px 0;
+}
+
+.redes-linea {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+
+.redes-linea a {
+    background: #007ACC;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.redes-linea a:hover {
+    background: #005a9e;
+}
+
+/* =====================================
+   FAQ
+===================================== */
+.faq details {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.faq summary {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    background: #f5f5f5;
+    border-radius: 5px;
+}
+
+.faq p {
+    margin-top: 15px;
+    padding: 10px;
 }
 
 /* =====================================
    FOOTER
 ===================================== */
+footer,
+.site-footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
 
-footer{
-  text-align:center;
-  padding:20px;
-  background:#fff;
-  border-top:1px solid var(--border);
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* =====================================
+   FLECHAS SCROLL
+===================================== */
+.flecha-bajar,
+.flecha-subir {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    font-weight: bold;
+    color: #007ACC;
+    text-decoration: none;
+    z-index: 9999;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+    background: rgba(255,255,255,0.9);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.flecha-bajar:hover,
+.flecha-subir:hover {
+    opacity: 1;
+    transform: translateX(-50%) scale(1.1);
+}
+
+.flecha-bajar {
+    bottom: 15px;
+}
+
+.flecha-subir {
+    top: 15px;
 }
 
 /* =====================================
    RESPONSIVE
 ===================================== */
-
-@media(max-width:700px){
-  .productos{
-    grid-template-columns:1fr;
-  }
-}
-/* =========================
-   LOGOS Y PORTADA UNIFICADOS
-   ========================= */
-
-/* Logo título grande */
-.hero-logo-top,
-.brand-logo-small {
-    display: block;
-    margin: 20px auto;
-    max-width: 420px;   /* 6 cm aprox más pequeño */
-    width: 80%;
-    height: auto;
-}
-
-/* Imagen pareja (portada principal) */
-.hero img,
-.hero_fitness {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-
-/* Logo verde inferior */
-.brand-logo {
-    display: block;
-    margin: 20px auto;
-    max-width: 320px;
-    width: 60%;
-    height: auto;
-}
-
-/* Evita logos duplicados */
-header img + img {
-    margin-top: 10px;
+@media (max-width: 768px) {
+    .hero-panel {
+        grid-template-columns: 1fr;
+    }
+    
+    .productos {
+        grid-template-columns: 1fr;
+    }
+    
+    .logo-titulo,
+    .hero-img,
+    .logo-verde {
+        max-height: 150px;
+    }
+    
+    .nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .cta {
+        flex-direction: column;
+    }
+    
+    .icon-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+    
+    .topbar-inner {
+        flex-direction: column;
+        gap: 5px;
+    }
 }
 
-/* Centrado general de secciones */
-.hero,
-.hero-texto {
-    text-align: center;
-}
-/* ================= HERO PAREJA ================= */
-
-.hero {
-    height: calc(100vh - 8cm);
-    overflow: hidden;
-}
-
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-
-/* ================= LOGO MANOS (LOGO GRANDE) ================= */
-
-.hero-logo-top {
-    display: block;
-    margin: 10px auto;
-    max-width: 90%;
-    height: calc(100% - 8cm);
-    object-fit: contain;
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8em;
+    }
+    
+    .producto img {
+        height: 200px;
+    }
 }
