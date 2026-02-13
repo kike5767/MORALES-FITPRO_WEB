@@ -124,17 +124,21 @@ body {
 }
 
 /* Logos en index.html - llenan ancho completo, altura reducida */
-.logo-titulo,
-.hero-img,
-.logo-verde {
+
+/* ===== LOGO PRINCIPAL ===== */
+
+.logo-titulo {
     width: 100%;
-    max-width: 100%;
     height: auto;
-    max-height: 200px;
-    object-fit: contain;
     display: block;
-    margin: 0 auto;
 }
+/* ===== HEADER CONTENEDOR ===== */
+
+.header-principal {
+    text-align: center;
+    padding: 20px 0;
+}
+
 
 .menu {
     display: flex;
@@ -188,11 +192,9 @@ body {
 
 /* Logo en otras páginas - centrado y ancho completo */
 .brand-logo {
-    height: 50px;
-    width: auto;
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
 }
 
 /* Logo en header-home - centrado y ancho completo */

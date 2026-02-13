@@ -1,0 +1,6 @@
+
+correcciones presentacion en github page
+
+
+uedes corregir sin dañar lo hecho y explicame local en mi portatil se ve bien el codiigo al ejecutarlo en pantalla y cuando se ejecuta en github page no carga algunos cosas como botones de agrgar al carrito ni el carrito y whassap  gpt explica que java scritp html  y otros al ejecutar en github page no conoce algunos archivos o comandos por eso carga a veces con errores o no carga  esto lo puedes corregir para que no se presente esto en github page que se vea como esta local
+
